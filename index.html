@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURA | AI-Powered Meeting Preparation Agent</title>
+  <meta name="description" content="Walk into every meeting already prepared. Research attendees, understand companies, analyze context, and generate briefings instantly with AI.">
+  
+  <!-- SEO & OpenGraph -->
+  <meta property="og:title" content="AURA | AI-Powered Meeting Preparation Agent">
+  <meta property="og:description" content="Walk into every meeting already prepared. Research attendees, understand companies, analyze context, and generate briefings instantly with AI.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.9/dist/lenis.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor Glow -->
+  <div class="custom-cursor-glow" id="custom-cursor"></div>
+
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow bg-glow-1"></div>
+  <div class="ambient-glow bg-glow-2"></div>
+
+  <!-- Background Videos Container -->
+  <div class="video-background-wrapper">
+    <div id="video-container-1" class="video-container active">
+      <video id="video-1" autoplay loop muted playsinline preload="auto">
+        <source src="https://res.cloudinary.com/dgvlwq6qj/video/upload/f_auto,q_auto:best/vedio-1_saukzf.mp4" type="video/mp4">
+      </video>
+      <div class="video-overlay"></div>
+    </div>
+    
+    <div id="video-container-2" class="video-container">
+      <video id="video-2" autoplay loop muted playsinline preload="auto">
+        <source src="https://res.cloudinary.com/dgvlwq6qj/video/upload/f_auto,q_auto:best/vedio-2_rc6goq.mp4" type="video/mp4">
+      </video>
+      <div class="video-overlay"></div>
+    </div>
+  </div>
+
+  <!-- Floating Header / Navbar -->
+  <header class="header">
+    <div class="header-container">
+      <a href="#" class="logo-link" id="nav-logo">
+        <div class="logo-icon"></div>
+        <span class="logo-text">AURA</span>
+      </a>
+      
+      <nav class="nav-menu">
+        <a href="#how-it-works" class="nav-item">How It Works</a>
+        <a href="#features" class="nav-item">Features</a>
+        <a href="#impact" class="nav-item">Impact</a>
+      </nav>
+      
+      <div class="header-actions">
+        <a href="#cta" class="btn btn-secondary btn-nav">Sign In</a>
+        <a href="#cta" class="btn btn-primary btn-nav">Start Free</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Scroll Container -->
+  <main id="main-content">
+
+    <!-- SECTION 1: HERO -->
+    <section class="section section-hero" id="hero">
+      <!-- Floating subtle particle canvas or elements -->
+      <div class="particles-container" id="particles-container"></div>
+      
+      <div class="hero-container centered-editorial">
+        <div class="hero-editorial-content" id="hero-card">
+          <div class="brand-tag-badge">
+            <span class="tag-glow-dot"></span>
+            <span>AURA SYSTEM 1.0 — COGNITIVE LAYER</span>
+          </div>
+          
+          <h1 class="hero-title font-luxury">
+            <span class="line-block line-sans-bold">AI MEETING</span>
+            <span class="line-block line-serif-glow">INTELLIGENCE</span>
+            <span class="line-block line-sans-centerpiece">THAT ARRIVES</span>
+            <span class="line-block line-serif-premium">BEFORE YOU DO</span>
+          </h1>
+          
+          <p class="hero-subtitle font-body-luxury">
+            Walk into every meeting already prepared. Research attendees, understand companies, analyze context, and generate intelligent briefing documents instantly.
+          </p>
+          
+          <div class="hero-buttons centered-buttons">
+            <a href="#cta" class="btn btn-luxury-primary btn-lg">
+              <span>Start Preparing</span>
+              <i data-lucide="arrow-right" class="btn-icon"></i>
+            </a>
+            <a href="#demo" class="btn btn-luxury-secondary btn-lg">
+              <i data-lucide="play" class="btn-icon"></i>
+              <span>Watch Demo</span>
+            </a>
+          </div>
+          
+          <div class="hero-trust-editorial">
+            <p>Trusted by teams, founders, consultants and professionals.</p>
+            <div class="trust-logos-editorial">
+              <span>Linear</span>
+              <span class="separator-dot"></span>
+              <span>Notion</span>
+              <span class="separator-dot"></span>
+              <span>Apple</span>
+              <span class="separator-dot"></span>
+              <span>Arc</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SCROLL TRANSITION INTERMEDIARY STATEMENT -->
+      <div class="section-statement" id="statement-section">
+        <div class="statement-container">
+          <h2 class="statement-text font-luxury-statement" id="statement-title">
+            BEFORE THE MEETING STARTS,<br>
+            <span class="font-serif italic text-glow-luxury-sec">YOUR AI HAS ALREADY DONE THE WORK.</span>
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: HOW IT WORKS -->
+    <section class="section section-how" id="how-it-works">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">System Workflow</span>
+          <h2 class="section-title font-heading">Intelligence in Motion</h2>
+        </div>
+        
+        <!-- 4 Floating Glass Cards (Mouse-interactive tilt) -->
+        <div class="cards-grid grid-4" id="how-cards-container">
+          
+          <div class="glass-card hover-tilt tilt-card" data-tilt-intensity="15">
+            <div class="card-glow-accent"></div>
+            <div class="card-icon-wrapper">
+              <i data-lucide="search" class="card-icon"></i>
+            </div>
+            <h3 class="card-title font-heading">Research Companies</h3>
+            <p class="card-description font-body">
+              Analyze corporate history, market position, recent news, and key growth drivers automatically.
+            </p>
+            <div class="card-border-glow"></div>
+          </div>
+
+          <div class="glass-card hover-tilt tilt-card" data-tilt-intensity="15">
+            <div class="card-glow-accent"></div>
+            <div class="card-icon-wrapper">
+              <i data-lucide="users" class="card-icon"></i>
+            </div>
+            <h3 class="card-title font-heading">Analyze Participants</h3>
+            <p class="card-description font-body">
+              Map stakeholder profiles, executive history, shared connections, and potential interest areas.
+            </p>
+            <div class="card-border-glow"></div>
+          </div>
+
+          <div class="glass-card hover-tilt tilt-card" data-tilt-intensity="15">
+            <div class="card-glow-accent"></div>
+            <div class="card-icon-wrapper">
+              <i data-lucide="file-text" class="card-icon"></i>
+            </div>
+            <h3 class="card-title font-heading">Generate Briefings</h3>
+            <p class="card-description font-body">
+              Receive concise, high-impact dossiers containing all critical data points 15 minutes before talk time.
+            </p>
+            <div class="card-border-glow"></div>
+          </div>
+
+          <div class="glass-card hover-tilt tilt-card" data-tilt-intensity="15">
+            <div class="card-glow-accent"></div>
+            <div class="card-icon-wrapper">
+              <i data-lucide="help-circle" class="card-icon"></i>
+            </div>
+            <h3 class="card-title font-heading">Suggest Questions</h3>
+            <p class="card-description font-body">
+              Get custom conversation starters and strategic lines of inquiry tailored to trigger optimal responses.
+            </p>
+            <div class="card-border-glow"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: FUTURE OF MEETINGS -->
+    <section class="section section-future" id="future-meetings">
+      <div class="future-gradient-overlay"></div>
+      <div class="future-container">
+        <div class="future-content" id="future-reveal-content">
+          <span class="section-tag tag-cyan">The Paradigm Shift</span>
+          <h2 class="future-title font-heading">
+            FROM INFORMATION TO <br><span class="text-glow">PREPARATION IN SECONCE</span>
+          </h2>
+          <p class="future-subtitle font-body">
+            Transform raw meeting data into actionable intelligence. Stop digging through tabs and spreadsheets. Walk in with a clear, strategic mental model generated instantly.
+          </p>
+          <div class="future-action">
+            <a href="#features" class="btn btn-primary btn-lg">Explore Engine Architecture</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: FEATURES (Dark Premium Background - No Video) -->
+    <section class="section section-features" id="features">
+      <div class="features-grain"></div>
+      <div class="section-container">
+        <div class="section-header text-center">
+          <span class="section-tag tag-purple">Core Architecture</span>
+          <h2 class="section-title font-heading">Engineered for High-Stakes Interactions</h2>
+          <p class="section-subtitle font-body">Every tool required to win the room, integrated into a unified cognitive layer.</p>
+        </div>
+
+        <div class="cards-grid grid-3">
+          
+          <div class="glass-card feature-card">
+            <div class="card-glow-cyan"></div>
+            <div class="feature-header">
+              <i data-lucide="user-check" class="feature-icon text-cyan"></i>
+              <h3 class="feature-title font-heading">Attendee Intelligence</h3>
+            </div>
+            <p class="feature-desc font-body">Detailed analysis of attendees' backgrounds, writing, accomplishments, and current interests.</p>
+          </div>
+
+          <div class="glass-card feature-card">
+            <div class="card-glow-purple"></div>
+            <div class="feature-header">
+              <i data-lucide="building-2" class="feature-icon text-purple"></i>
+              <h3 class="feature-title font-heading">Company Research</h3>
+            </div>
+            <p class="feature-desc font-body">Comprehensive summaries of organizational structure, active products, funding rounds, and recent news events.</p>
+          </div>
+
+          <div class="glass-card feature-card">
+            <div class="card-glow-cyan"></div>
+            <div class="feature-header">
+              <i data-lucide="briefcase" class="feature-icon text-cyan"></i>
+              <h3 class="feature-title font-heading">Meeting Brief Generation</h3>
+            </div>
+            <p class="feature-desc font-body">Automated synthesis of objectives, profile summaries, timeline mapping, and clear structural objectives.</p>
+          </div>
+
+          <div class="glass-card feature-card">
+            <div class="card-glow-purple"></div>
+            <div class="feature-header">
+              <i data-lucide="message-square" class="feature-icon text-purple"></i>
+              <h3 class="feature-title font-heading">AI Suggested Questions</h3>
+            </div>
+            <p class="feature-desc font-body">Contextually relevant, probing questions engineered to steer negotiations and align expectations.</p>
+          </div>
+
+          <div class="glass-card feature-card">
+            <div class="card-glow-cyan"></div>
+            <div class="feature-header">
+              <i data-lucide="shuffle" class="feature-icon text-cyan"></i>
+              <h3 class="feature-title font-heading">Conversation Context Analysis</h3>
+            </div>
+            <p class="feature-desc font-body">Extract core patterns and historical links between your company and external stakeholders to prevent friction.</p>
+          </div>
+
+          <div class="glass-card feature-card">
+            <div class="card-glow-purple"></div>
+            <div class="feature-header">
+              <i data-lucide="check-square" class="feature-icon text-purple"></i>
+              <h3 class="feature-title font-heading">Follow-Up Recommendations</h3>
+            </div>
+            <p class="feature-desc font-body">Post-meeting action lists, messaging summaries, and task assignments automatically drafted for your approval.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: IMPACT -->
+    <section class="section section-impact" id="impact">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <span class="section-tag tag-cyan">Proven Performance</span>
+          <h2 class="section-title font-heading">The ROI of Strategic Readiness</h2>
+        </div>
+
+        <!-- Floating Statistics Cards -->
+        <div class="cards-grid grid-4 impact-grid">
+          
+          <div class="glass-card stat-card float-slow-1">
+            <div class="stat-glow"></div>
+            <div class="stat-number font-heading text-glow-cyan">90%</div>
+            <div class="stat-label font-body">Less Preparation Time</div>
+            <p class="stat-text font-body">Automate manual research workflows instantly.</p>
+          </div>
+
+          <div class="glass-card stat-card float-slow-2">
+            <div class="stat-glow"></div>
+            <div class="stat-number font-heading text-glow-purple">10x</div>
+            <div class="stat-label font-body">Faster Research</div>
+            <p class="stat-text font-body">Aggregate 50+ data sources in under 30 seconds.</p>
+          </div>
+
+          <div class="glass-card stat-card float-slow-3">
+            <div class="stat-glow"></div>
+            <div class="stat-number font-heading text-glow-cyan">Instant</div>
+            <div class="stat-label font-body">Meeting Summaries</div>
+            <p class="stat-text font-body">Structured dossiers generated in one click.</p>
+          </div>
+
+          <div class="glass-card stat-card float-slow-4">
+            <div class="stat-glow"></div>
+            <div class="stat-number font-heading text-glow-purple">24/7</div>
+            <div class="stat-label font-body">AI Assistance</div>
+            <p class="stat-text font-body">Always active, working across time zones.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: POWER STATEMENT -->
+    <section class="section section-power" id="power-statement">
+      <div class="power-container">
+        <div class="power-content">
+          <h2 class="power-text font-heading" id="power-text-reveal">
+            STOP PREPARING FOR MEETINGS.<br>
+            <span class="text-glow-gradient">START ARRIVING READY.</span>
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: FINAL CTA -->
+    <section class="section section-cta" id="cta">
+      <div class="cta-container">
+        <div class="glass-card cta-glass-card" id="cta-card">
+          <div class="cta-glow"></div>
+          <div class="cta-content text-center">
+            <div class="tag-badge badge-center">
+              <i data-lucide="crown" class="badge-icon"></i>
+              <span>Elevate your communication</span>
+            </div>
+            
+            <h2 class="cta-title font-heading">
+              EVERY GREAT MEETING <br><span class="text-glow-cyan">STARTS BEFORE IT BEGINS.</span>
+            </h2>
+            
+            <p class="cta-subtitle font-body">
+              Let AI handle the preparation. You focus on the conversation.
+            </p>
+            
+            <div class="cta-buttons">
+              <a href="#start" class="btn btn-primary btn-xl">
+                <span>Get Started Now</span>
+                <i data-lucide="arrow-right" class="btn-icon"></i>
+              </a>
+            </div>
+            
+            <p class="cta-footer-note font-body">No credit card required. Cancel anytime.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Footer details -->
+      <footer class="footer">
+        <div class="footer-container">
+          <p class="copyright">&copy; 2026 AURA Inc. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Security</a>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+  </main>
+
+  <!-- Premium Glassmorphic Dashboard Console Overlay -->
+  <div class="dashboard-overlay" id="dashboard-console">
+    <div class="dashboard-container glass-card">
+      <div class="dashboard-header">
+        <div class="dashboard-logo">
+          <div class="logo-icon"></div>
+          <span class="logo-text">AURA CONSOLE</span>
+        </div>
+        <button class="close-console-btn" id="close-console-btn">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      
+      <div class="dashboard-grid">
+        <!-- Sidebar Stats & Connections -->
+        <aside class="dashboard-sidebar">
+          <div class="user-profile-section">
+            <div class="user-avatar">AD</div>
+            <div class="user-meta">
+              <h4 class="user-email">dev@aura.io</h4>
+              <span class="user-workspace">Primary Workspace</span>
+            </div>
+          </div>
+          
+          <div class="sidebar-divider"></div>
+          
+          <div class="integrations-list">
+            <h4>Connected Integrations</h4>
+            <div class="integration-item connected">
+              <i data-lucide="calendar" class="integration-icon"></i>
+              <span>Google Calendar</span>
+              <span class="status-indicator">Active</span>
+            </div>
+            <div class="integration-item connected">
+              <i data-lucide="mail" class="integration-icon"></i>
+              <span>Google Gmail</span>
+              <span class="status-indicator">Active</span>
+            </div>
+            <div class="integration-item connected">
+              <i data-lucide="database" class="integration-icon"></i>
+              <span>Pinecone RAG</span>
+              <span class="status-indicator">Synced</span>
+            </div>
+          </div>
+          
+          <div class="quick-stats">
+            <div class="stat-row">
+              <span>Prepared Briefs</span>
+              <span class="stat-val" id="stats-prepared-count">0</span>
+            </div>
+            <div class="stat-row">
+              <span>Sync History</span>
+              <span class="stat-val" id="stats-total-count">0</span>
+            </div>
+          </div>
+        </aside>
+        
+        <!-- Center panel: Meetings listing -->
+        <main class="dashboard-main">
+          <section class="console-section">
+            <h3 class="section-title">Today's Syncs</h3>
+            <div class="meetings-list-container" id="todays-meetings-list">
+              <p class="placeholder-text">Syncing Google Calendar events...</p>
+            </div>
+          </section>
+
+          <section class="console-section">
+            <h3 class="section-title">Upcoming Meetings</h3>
+            <div class="meetings-list-container" id="upcoming-meetings-list">
+              <p class="placeholder-text">No upcoming meetings synced.</p>
+            </div>
+          </section>
+          
+          <!-- Post-Meeting Transcription Test section -->
+          <section class="console-section transcript-section">
+            <h3 class="section-title">Post-Meeting Scribe</h3>
+            <p class="section-desc">Upload a meeting transcript to extract action items, assign task owners, and draft follow-up emails.</p>
+            <div class="transcript-form">
+              <select id="transcript-meeting-select" class="console-select">
+                <option value="">Select meeting...</option>
+              </select>
+              <textarea id="transcript-raw-text" class="console-textarea" placeholder="Paste raw meeting transcript here (e.g. Marcus Vance: We must encrypt keys. Sarah Chen: Yes, and we will build Redis.)"></textarea>
+              <button class="btn btn-luxury-primary btn-sm" id="upload-transcript-btn" style="padding: 10px 20px; font-size: 13px; border-radius: 8px;">
+                <i data-lucide="upload" class="btn-icon-sm" style="width: 14px; height: 14px;"></i>
+                <span>Analyze Transcript</span>
+              </button>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sliding Details Drawer (Briefings & Transcripts) -->
+  <div class="details-drawer" id="details-drawer">
+    <div class="drawer-header">
+      <h3 class="drawer-title" id="drawer-title-text">Prepared Dossier</h3>
+      <button class="close-drawer-btn" id="close-drawer-btn">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    <div class="drawer-body" id="drawer-body-content">
+      <!-- Brief/Transcript analysis dynamically injected -->
+    </div>
+  </div>
+
+  <!-- Agent Loading Status Overlay -->
+  <div class="agent-loader-overlay" id="agent-loader-overlay">
+    <div class="loader-content">
+      <div class="spinning-orb-container">
+        <div class="spinning-orb"></div>
+        <div class="spinning-orb-glow"></div>
+      </div>
+      <h3 class="loader-status-title">LangGraph Agent Executing</h3>
+      <p class="loader-status-desc" id="loader-status-step">Initializing nodes...</p>
+      
+      <div class="agent-node-steps">
+        <div class="agent-step-item" id="step-metadata"><span class="step-indicator"></span> 1. Sync Calendar Event Metadata</div>
+        <div class="agent-step-item" id="step-gmail"><span class="step-indicator"></span> 2. Search & Fetch Gmail Threads</div>
+        <div class="agent-step-item" id="step-research"><span class="step-indicator"></span> 3. Perform Company Scrapes & News Search</div>
+        <div class="agent-step-item" id="step-rag"><span class="step-indicator"></span> 4. Generate Embeddings & Index in Pinecone</div>
+        <div class="agent-step-item" id="step-llm"><span class="step-indicator"></span> 5. Compile Dossier using GPT-4o</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

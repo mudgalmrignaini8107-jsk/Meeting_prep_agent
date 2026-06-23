@@ -1,0 +1,186 @@
+2026-06-23 19:58:21.894 | INFO     | app.main:<module>:20 - Initializing database schema...
+2026-06-23 19:58:25.998 | ERROR    | app.main:<module>:24 - Failed to initialize database tables: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 19:58:31.491 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 19:58:31.499 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 19:58:31.500 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 19:58:31.622 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 19:58:31.623 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 19:58:31.624 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 19:58:31.735 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 19:58:31.736 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 19:58:31.736 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 19:58:31.794 | INFO     | app.api.meetings:prepare_meeting:64 - User dev@aura.io triggered preparation for meeting ID 1
+2026-06-23 19:58:31.820 | INFO     | app.services.agent_service:meeting_metadata_node:41 - Node 1: Extracting metadata for meeting ID 1
+2026-06-23 19:58:31.827 | INFO     | app.services.agent_service:email_retrieval_node:78 - Node 2: Retrieving relevant email threads for meeting ID 1
+2026-06-23 19:58:31.830 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 19:58:31.830 | INFO     | app.services.google_service:get_gmail_threads:101 - Serving mock Gmail threads for user 1
+2026-06-23 19:58:31.834 | INFO     | app.services.agent_service:research_node:115 - Node 3: Performing web enrichment for company profiles
+2026-06-23 19:58:31.838 | INFO     | app.services.research_service:search_company_news:19 - SerpAPI API key not set. Returning mock news for: Venturecapital
+2026-06-23 19:58:34.371 | INFO     | app.services.research_service:search_company_news:19 - SerpAPI API key not set. Returning mock news for: Startup
+2026-06-23 19:58:37.609 | INFO     | app.services.agent_service:context_aggregation_node:172 - Node 4: Retrieving past meeting briefs and indexing contexts in Pinecone
+2026-06-23 19:58:37.614 | ERROR    | app.services.agent_service:context_aggregation_node:246 - Failed to index context vector in Pinecone: name 'datetime' is not defined
+2026-06-23 19:58:37.616 | INFO     | app.services.agent_service:brief_generation_node:252 - Node 5: Compiling contexts and generating final brief via GPT-4o
+2026-06-23 19:58:37.665 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 19:58:37.666 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 19:58:37.667 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 19:58:37.768 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 19:58:37.770 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 19:58:37.771 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 19:58:37.836 | INFO     | app.api.transcripts:upload_transcript:29 - User dev@aura.io uploaded transcript for meeting ID 1
+2026-06-23 19:59:33.135 | INFO     | app.main:<module>:20 - Initializing database schema...
+2026-06-23 19:59:37.323 | ERROR    | app.main:<module>:24 - Failed to initialize database tables: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 19:59:39.544 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 19:59:39.550 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 19:59:39.550 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 19:59:39.685 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 19:59:39.687 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 19:59:39.688 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 19:59:39.788 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 19:59:39.791 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 19:59:39.791 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 19:59:39.847 | INFO     | app.api.meetings:prepare_meeting:64 - User dev@aura.io triggered preparation for meeting ID 1
+2026-06-23 19:59:39.867 | INFO     | app.services.agent_service:meeting_metadata_node:41 - Node 1: Extracting metadata for meeting ID 1
+2026-06-23 19:59:39.875 | INFO     | app.services.agent_service:email_retrieval_node:78 - Node 2: Retrieving relevant email threads for meeting ID 1
+2026-06-23 19:59:39.877 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 19:59:39.877 | INFO     | app.services.google_service:get_gmail_threads:101 - Serving mock Gmail threads for user 1
+2026-06-23 19:59:39.879 | INFO     | app.services.agent_service:research_node:115 - Node 3: Performing web enrichment for company profiles
+2026-06-23 19:59:39.883 | INFO     | app.services.research_service:search_company_news:19 - SerpAPI API key not set. Returning mock news for: Startup
+2026-06-23 19:59:43.028 | INFO     | app.services.research_service:search_company_news:19 - SerpAPI API key not set. Returning mock news for: Venturecapital
+2026-06-23 19:59:44.751 | INFO     | app.services.agent_service:context_aggregation_node:172 - Node 4: Retrieving past meeting briefs and indexing contexts in Pinecone
+2026-06-23 19:59:44.757 | ERROR    | app.services.agent_service:context_aggregation_node:246 - Failed to index context vector in Pinecone: name 'datetime' is not defined
+2026-06-23 19:59:44.759 | INFO     | app.services.agent_service:brief_generation_node:252 - Node 5: Compiling contexts and generating final brief via GPT-4o
+2026-06-23 19:59:44.791 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 19:59:44.793 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 19:59:44.793 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 19:59:44.899 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 19:59:44.900 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 19:59:44.900 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 19:59:44.966 | INFO     | app.api.transcripts:upload_transcript:29 - User dev@aura.io uploaded transcript for meeting ID 1
+2026-06-23 20:02:02.152 | INFO     | app.main:<module>:20 - Initializing database schema...
+2026-06-23 20:02:02.634 | INFO     | app.main:<module>:22 - Database tables initialized successfully.
+2026-06-23 20:06:39.989 | INFO     | app.main:<module>:20 - Initializing database schema...
+2026-06-23 20:06:40.001 | INFO     | app.main:<module>:22 - Database tables initialized successfully.
+2026-06-23 20:06:47.094 | INFO     | app.main:<module>:20 - Initializing database schema...
+2026-06-23 20:06:47.100 | INFO     | app.main:<module>:22 - Database tables initialized successfully.
+2026-06-23 20:07:07.499 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 20:07:07.504 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 20:07:07.504 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 20:08:09.373 | INFO     | app.api.meetings:prepare_meeting:64 - User dev@aura.io triggered preparation for meeting ID 1
+2026-06-23 20:08:09.403 | INFO     | app.services.agent_service:meeting_metadata_node:41 - Node 1: Extracting metadata for meeting ID 1
+2026-06-23 20:08:09.422 | INFO     | app.services.agent_service:email_retrieval_node:78 - Node 2: Retrieving relevant email threads for meeting ID 1
+2026-06-23 20:08:09.424 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 20:08:09.425 | INFO     | app.services.google_service:get_gmail_threads:101 - Serving mock Gmail threads for user 1
+2026-06-23 20:08:09.428 | INFO     | app.services.agent_service:research_node:115 - Node 3: Performing web enrichment for company profiles
+2026-06-23 20:08:09.434 | INFO     | app.services.research_service:search_company_news:19 - SerpAPI API key not set. Returning mock news for: Startup
+2026-06-23 20:08:11.247 | INFO     | app.services.research_service:search_company_news:19 - SerpAPI API key not set. Returning mock news for: Venturecapital
+2026-06-23 20:08:12.951 | INFO     | app.services.agent_service:context_aggregation_node:172 - Node 4: Retrieving past meeting briefs and indexing contexts in Pinecone
+2026-06-23 20:08:12.958 | ERROR    | app.services.agent_service:context_aggregation_node:246 - Failed to index context vector in Pinecone: name 'datetime' is not defined
+2026-06-23 20:08:12.960 | INFO     | app.services.agent_service:brief_generation_node:252 - Node 5: Compiling contexts and generating final brief via GPT-4o
+2026-06-23 20:08:26.359 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 20:08:26.361 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 20:08:26.362 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 20:08:37.476 | INFO     | app.api.transcripts:upload_transcript:29 - User dev@aura.io uploaded transcript for meeting ID 1
+2026-06-23 20:11:16.216 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 20:11:16.223 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 20:11:16.223 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 20:11:41.440 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 20:11:41.443 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 20:11:41.443 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 20:12:08.030 | INFO     | app.api.transcripts:upload_transcript:29 - User dev@aura.io uploaded transcript for meeting ID 1
+2026-06-23 20:15:30.075 | INFO     | app.main:<module>:20 - Initializing database schema...
+2026-06-23 20:15:30.087 | INFO     | app.main:<module>:22 - Database tables initialized successfully.
+2026-06-23 20:15:32.384 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 20:15:32.393 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 20:15:32.394 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 20:15:32.662 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 20:15:32.664 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 20:15:32.665 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 20:15:32.812 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 20:15:32.815 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 20:15:32.815 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 20:15:32.884 | INFO     | app.api.meetings:prepare_meeting:64 - User dev@aura.io triggered preparation for meeting ID 1
+2026-06-23 20:15:32.925 | INFO     | app.services.agent_service:meeting_metadata_node:41 - Node 1: Extracting metadata for meeting ID 1
+2026-06-23 20:15:32.935 | INFO     | app.services.agent_service:email_retrieval_node:78 - Node 2: Retrieving relevant email threads for meeting ID 1
+2026-06-23 20:15:32.938 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 20:15:32.938 | INFO     | app.services.google_service:get_gmail_threads:101 - Serving mock Gmail threads for user 1
+2026-06-23 20:15:32.941 | INFO     | app.services.agent_service:research_node:115 - Node 3: Performing web enrichment for company profiles
+2026-06-23 20:15:32.950 | INFO     | app.services.research_service:search_company_news:19 - SerpAPI API key not set. Returning mock news for: Venturecapital
+2026-06-23 20:15:35.328 | INFO     | app.services.research_service:search_company_news:19 - SerpAPI API key not set. Returning mock news for: Startup
+2026-06-23 20:15:38.131 | INFO     | app.services.agent_service:context_aggregation_node:172 - Node 4: Retrieving past meeting briefs and indexing contexts in Pinecone
+2026-06-23 20:15:38.135 | ERROR    | app.services.agent_service:context_aggregation_node:246 - Failed to index context vector in Pinecone: name 'datetime' is not defined
+2026-06-23 20:15:38.137 | INFO     | app.services.agent_service:brief_generation_node:252 - Node 5: Compiling contexts and generating final brief via GPT-4o
+2026-06-23 20:15:38.461 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 20:15:38.464 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 20:15:38.464 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 20:15:38.741 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 20:15:38.743 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 20:15:38.744 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 20:15:38.805 | INFO     | app.api.transcripts:upload_transcript:29 - User dev@aura.io uploaded transcript for meeting ID 1
+2026-06-23 20:24:17.670 | INFO     | app.main:<module>:20 - Initializing database schema...
+2026-06-23 20:24:17.679 | INFO     | app.main:<module>:22 - Database tables initialized successfully.
+2026-06-23 20:24:19.184 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 20:24:19.190 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 20:24:19.191 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 20:24:19.368 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 20:24:19.370 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 20:24:19.370 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 20:24:19.499 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 20:24:19.500 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 20:24:19.500 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 20:24:19.566 | INFO     | app.api.meetings:prepare_meeting:64 - User dev@aura.io triggered preparation for meeting ID 1
+2026-06-23 20:24:19.641 | INFO     | app.services.agent_service:meeting_metadata_node:41 - Node 1: Extracting metadata for meeting ID 1
+2026-06-23 20:24:19.647 | INFO     | app.services.agent_service:email_retrieval_node:78 - Node 2: Retrieving relevant email threads for meeting ID 1
+2026-06-23 20:24:19.649 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 20:24:19.650 | INFO     | app.services.google_service:get_gmail_threads:101 - Serving mock Gmail threads for user 1
+2026-06-23 20:24:19.651 | INFO     | app.services.agent_service:research_node:115 - Node 3: Performing web enrichment for company profiles
+2026-06-23 20:24:19.657 | INFO     | app.services.research_service:search_company_news:19 - SerpAPI API key not set. Returning mock news for: Venturecapital
+2026-06-23 20:24:21.905 | INFO     | app.services.research_service:search_company_news:19 - SerpAPI API key not set. Returning mock news for: Startup
+2026-06-23 20:24:23.285 | INFO     | app.services.agent_service:context_aggregation_node:172 - Node 4: Retrieving past meeting briefs and indexing contexts in Pinecone
+2026-06-23 20:24:23.291 | ERROR    | app.services.agent_service:context_aggregation_node:246 - Failed to index context vector in Pinecone: name 'datetime' is not defined
+2026-06-23 20:24:23.292 | INFO     | app.services.agent_service:brief_generation_node:252 - Node 5: Compiling contexts and generating final brief via GPT-4o
+2026-06-23 20:24:23.324 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 20:24:23.326 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 20:24:23.326 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 20:24:23.409 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 20:24:23.411 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 20:24:23.411 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 20:24:23.463 | INFO     | app.api.transcripts:upload_transcript:29 - User dev@aura.io uploaded transcript for meeting ID 1
+2026-06-23 20:29:10.299 | INFO     | app.main:<module>:20 - Initializing database schema...
+2026-06-23 20:29:10.309 | INFO     | app.main:<module>:22 - Database tables initialized successfully.
+2026-06-23 20:29:11.916 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 20:29:11.921 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 20:29:11.921 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 20:29:12.005 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 20:29:12.007 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 20:29:12.007 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 20:29:12.077 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 20:29:12.078 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 20:29:12.078 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 20:29:12.124 | INFO     | app.api.meetings:prepare_meeting:64 - User dev@aura.io triggered preparation for meeting ID 1
+2026-06-23 20:29:12.141 | INFO     | app.services.agent_service:meeting_metadata_node:41 - Node 1: Extracting metadata for meeting ID 1
+2026-06-23 20:29:12.145 | INFO     | app.services.agent_service:email_retrieval_node:78 - Node 2: Retrieving relevant email threads for meeting ID 1
+2026-06-23 20:29:12.146 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 20:29:12.146 | INFO     | app.services.google_service:get_gmail_threads:101 - Serving mock Gmail threads for user 1
+2026-06-23 20:29:12.147 | INFO     | app.services.agent_service:research_node:115 - Node 3: Performing web enrichment for company profiles
+2026-06-23 20:29:12.153 | INFO     | app.services.research_service:search_company_news:19 - SerpAPI API key not set. Returning mock news for: Startup
+2026-06-23 20:29:14.096 | INFO     | app.services.research_service:search_company_news:19 - SerpAPI API key not set. Returning mock news for: Venturecapital
+2026-06-23 20:29:16.064 | INFO     | app.services.agent_service:context_aggregation_node:172 - Node 4: Retrieving past meeting briefs and indexing contexts in Pinecone
+2026-06-23 20:29:16.069 | ERROR    | app.services.agent_service:context_aggregation_node:246 - Failed to index context vector in Pinecone: name 'datetime' is not defined
+2026-06-23 20:29:16.071 | INFO     | app.services.agent_service:brief_generation_node:252 - Node 5: Compiling contexts and generating final brief via GPT-4o
+2026-06-23 20:29:16.118 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 20:29:16.119 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 20:29:16.120 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 20:29:16.225 | INFO     | app.api.dashboard:get_dashboard_data:31 - Retrieving dashboard for user dev@aura.io in workspace 1
+2026-06-23 20:29:16.227 | WARNING  | app.services.google_service:get_google_credentials:27 - No Google OAuth connection found for user ID: 1
+2026-06-23 20:29:16.228 | INFO     | app.services.google_service:get_calendar_events:74 - Serving mock calendar events for user 1
+2026-06-23 20:29:16.290 | INFO     | app.api.transcripts:upload_transcript:29 - User dev@aura.io uploaded transcript for meeting ID 1
