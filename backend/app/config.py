@@ -8,6 +8,7 @@ class Settings(BaseSettings):
     # Core Application Settings
     APP_NAME: str = "AI Meeting Prep Agent API"
     DEBUG: bool = False
+    FRONTEND_DIR: str = "../frontend"
     
     # Database and Caching
     DATABASE_URL: str = "postgresql://postgres:postgres@localhost:5432/meeting_prep"

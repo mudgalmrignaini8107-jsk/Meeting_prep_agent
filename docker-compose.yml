@@ -2,16 +2,20 @@ version: '3.8'
 
 services:
   web:
-    build: .
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
     ports:
       - "8000:8000"
     environment:
       - DATABASE_URL=postgresql://postgres:postgres@db:5432/meeting_prep
       - REDIS_URL=redis://redis:6379/0
+      - FRONTEND_DIR=/frontend
     env_file:
-      - .env
+      - ./backend/.env
     volumes:
-      - .:/app
+      - ./backend:/app
+      - ./frontend:/frontend
     depends_on:
       db:
         condition: service_healthy

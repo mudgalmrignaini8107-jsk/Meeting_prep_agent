@@ -1,6 +1,6 @@
 /* app.js */
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
   // Force video playback and bypass browser restrictions
   const startVideos = () => {
     const videos = document.querySelectorAll('video');
@@ -484,8 +484,24 @@ document.addEventListener('DOMContentLoaded', () => {
   const transcriptRawText = document.getElementById('transcript-raw-text');
   const uploadTranscriptBtn = document.getElementById('upload-transcript-btn');
 
-  // API base route (uses relative paths since hosted on same port)
-  const API_BASE = '/api/v1';
+  // API base route (uses relative paths if hosted on same port, fallback to localhost:8000 for local decoupled files)
+  let API_BASE = window.location.origin.includes('8000') 
+    ? '/api/v1' 
+    : 'http://localhost:8000/api/v1';
+
+  // Load config.json if present (dynamic runtime configuration for Vercel/Railway)
+  try {
+    const configRes = await fetch('/config.json');
+    if (configRes.ok) {
+      const configData = await configRes.json();
+      if (configData.API_BASE) {
+        API_BASE = configData.API_BASE;
+        console.log("Using API_BASE from config.json:", API_BASE);
+      }
+    }
+  } catch (err) {
+    console.log("No config.json found or failed to load. Defaulting API_BASE to:", API_BASE);
+  }
 
   // Open & Close Console
   openConsoleButtons.forEach(btn => {

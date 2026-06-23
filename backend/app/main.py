@@ -41,21 +41,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-from fastapi.responses import FileResponse
 import os
-
-# Serve static landing page assets directly
-@app.get("/")
-def serve_index():
-    return FileResponse(os.path.join(os.path.dirname(__file__), "..", "index.html"))
-
-@app.get("/style.css")
-def serve_style():
-    return FileResponse(os.path.join(os.path.dirname(__file__), "..", "style.css"))
-
-@app.get("/app.js")
-def serve_js():
-    return FileResponse(os.path.join(os.path.dirname(__file__), "..", "app.js"))
+from fastapi.staticfiles import StaticFiles
 
 # System health endpoint moved to /api/health
 @app.get("/api/health", tags=["System Health"])
@@ -75,3 +62,11 @@ for prefix in ["", "/api/v1"]:
     app.include_router(briefs.router, prefix=prefix)
     app.include_router(copilot.router, prefix=prefix)
     app.include_router(transcripts.router, prefix=prefix)
+
+# Dynamically mount frontend files if FRONTEND_DIR exists
+frontend_path = os.path.abspath(settings.FRONTEND_DIR)
+if os.path.exists(frontend_path):
+    logger.info(f"Serving static frontend files from {frontend_path}")
+    app.mount("/", StaticFiles(directory=frontend_path, html=True), name="frontend")
+else:
+    logger.warning(f"Frontend directory not found at {frontend_path}. Running in pure API mode.")
